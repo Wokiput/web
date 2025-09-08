@@ -92,31 +92,16 @@ a {
     gap: 10px;
 }
 .grid {
-    display: inline-grid;
-    grid-template-columns: 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px;
-    gap: 2px;
+    border-collapse: collapse;
     border: 2px solid white;
-    padding: 2px;
 }
-.grid div {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.grid td {
+    width: 40px;
+    height: 40px;
     border: 1px solid white;
+    text-align: center;
+    vertical-align: bottom;
 }
-.g1 { 
-    background: green; 
-    grid-row: span 2;
-}
-.g2, .g3, .g4, .g5, .g6 { 
-    background: blue; 
-}
-.g6{
-    grid-column: 1;
-    grid-row: 3;
-}
-.g7 { 
-    background: red; 
-    grid-column: span 2;
-}
+.g1 { background: green; }
+.g2, .g3, .g4, .g5, .g6 { background: blue; }
+.g7 { background: red; }
