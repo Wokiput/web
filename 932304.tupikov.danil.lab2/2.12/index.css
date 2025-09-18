@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    background-color: aqua;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.page_selector{
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+}
+
+.page_selector ul {
+    background-color: bisque;
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+}
+
+.main_content{
+    display: inline-block;
+    max-width: 69%;
+    background-color: darkgray;
+}

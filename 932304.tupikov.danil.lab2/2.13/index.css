@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    border: 1px solid forestgreen;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.page_selector{
+    background-color: aqua;
+    width: 25%;
+    flex: 1 1 auto;
+}
+
+.page_selector ul {
+    background-color: bisque;
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    background-color: darkgray;
+    flex: 1 1 auto;
+}
+
+.text_block img{
+    float: right;
+    width: 50%;
+}

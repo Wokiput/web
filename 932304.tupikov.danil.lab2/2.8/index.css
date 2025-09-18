@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.left_content{
+    background-color: aqua;
+    width: 200px;
+    flex-shrink: 0;
+}
+.left_content .internal_text{
+    padding: 10px;
+    background-color: bisque;
+}
+
+.main_content{
+    flex: 1;
+    background-color: darkgray;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: limegreen;
+    padding: 40px;
+}
