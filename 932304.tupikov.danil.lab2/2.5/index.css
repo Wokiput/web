@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EAEAEA;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.green-block {
+    background: green;
+    color: white;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.blue-block {
+    background: blue;
+    color: white;
+    width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 50px solid blue;
+}
