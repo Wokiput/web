@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.static-div {
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    margin-left: 10px;
+}
+
+.relative-div {
+    width: 150px;
+    height: 100px;
+    margin-left: 10px;
+    color: white;
+    position: relative;
+}
+
+.red {
+    background-color: darkred;
+}
+
+.indianred {
+    background-color: indianred;
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.orange {
+    margin-top: -30px;
+    margin-left: 40px;
+    background-color: peru;
+}
+
+.absolute-div {
+    width: 50%;
+    height: 50%;
+    background-color: indigo;
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+
+.fixed-div {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
