@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EAEAEA;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.content {
+    background: blue;
+    color: white;
+    width: 500px;
+    margin: 20px auto;
+}
