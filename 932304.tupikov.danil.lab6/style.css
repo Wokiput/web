@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    width: 850px;
+}
+
+.tab {
+    flex: 1;
+    background: red;
+    border: 3px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.topbar {
+    border-collapse: collapse;
+    display: flex;
+    height: 56px;
+}
+
+.tab + .tab{
+    border-left: none;
+}
+
+.tab.active {
+    filter: brightness(0.85);
+}
+
+.columns {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.left {
+    background: blue;
+}
+
+.right {
+    background: green;
+}
+
+.frame.view-left .left {
+    width: 95%;
+}
+.frame.view-left .right {
+    width: 5%;
+}
+
+.frame.view-right .left {
+    width: 5%;
+}
+.frame.view-right .right {
+    width: 95%;
+}
+
+.frame.view-both .left,
+.frame.view-both .right {
+    width: 50%;
+}
+
+.img-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.col-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-hidden {
+    display: none;
+}
