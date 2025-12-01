@@ -1,0 +1,20 @@
+@model Backend3.Models.AnswerModel
+@{
+    ViewData["Title"] = "Quiz";
+}
+
+<h2>Вопрос</h2>
+
+<form method="post" class="mb-3">
+    <div class="mb-2">
+        <label class="form-label">@ViewBag.QuestionText =</label>
+        <input asp-for="UserAnswer" class="form-control" type="text" inputmode="numeric" />
+        <span asp-validation-for="UserAnswer" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Next</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
