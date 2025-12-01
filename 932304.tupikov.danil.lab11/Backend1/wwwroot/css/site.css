@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
