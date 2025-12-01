@@ -1,0 +1,32 @@
+@model Backend2.Models.CalcModel
+
+<h2>ModelBindingInSeparateModel</h2>
+
+@if (Model.Result == null && Model.Error == null)
+{
+    <form method="post">
+        <input asp-for="A" class="form-control" /><br />
+
+        <select asp-for="Operation" class="form-control">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select><br />
+
+        <input asp-for="B" class="form-control" /><br />
+
+        <button type="submit">Submit</button>
+    </form>
+}
+else
+{
+    @if (Model.Error != null)
+    {
+        <h3 style="color:red">@Model.Error</h3>
+    }
+    else
+    {
+        <h3>@Model.Result</h3>
+    }
+}

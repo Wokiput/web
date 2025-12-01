@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Form parameters parsing demo";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Form parameters parsing demo</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a asp-controller="Calc" asp-action="Manual">Manual parsing in single action</a>
+        </li>
+        <li class="list-group-item">
+            <a asp-controller="Calc" asp-action="ManualWithSeparateHandlers">Manual parsing in separate actions</a>
+        </li>
+        <li class="list-group-item">
+            <a asp-controller="Calc" asp-action="ModelBindingInParameters">Model binding (parameters)</a>
+        </li>
+        <li class="list-group-item">
+            <a asp-controller="Calc" asp-action="ModelBindingInSeparateModel">Model binding (separate model)</a>
+        </li>
+    </ul>
+    <footer class="mt-4 text-muted">
+        © 2025 - Backend2
+    </footer>
+</div>

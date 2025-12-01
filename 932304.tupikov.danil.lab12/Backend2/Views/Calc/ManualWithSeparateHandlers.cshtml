@@ -1,0 +1,20 @@
+<h2>ManualWithSeparateHandlers</h2>
+
+@if (ViewBag.Result == null)
+{
+    <form method="post">
+        <input name="a" class="form-control" /><br />
+        <select name="operation" class="form-control">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select><br />
+        <input name="b" class="form-control" /><br />
+        <button type="submit">Submit</button>
+    </form>
+}
+else
+{
+    <h3>@ViewBag.Result</h3>
+}
